@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../mainpage/style/profile.css">
+</head>
+<body>
+    
+<div class="parent">
+    <h2>RoyalSuit</h2>
+   <button type="submit" disabled class="saveBtn" id="saveBtn"  onclick="saveBtn()">Save</button>
+<div class="child">
+<div class="editBtn" id="editBtn" onclick="edit()"><img id="animIcon" src="../mainpage/src/edit-static.png"></div>
+<div class="inputs">
+    <input type="text" required disabled  placeholder="Name" name="name" id="name">
+</div>
+<div class="inputs">
+    <input type="text" required disabled placeholder="Email" name="email" id="email">
+</div>
+<div class="inputs">
+    <select disabled required name="options" id="options" >
+        <option value="Gender">Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+<div class="inputs">
+    <input disabled required type="text" placeholder="Address" name="" id="Address">
+</div>
+</div>
+
+
+</div>
+
+<script src="../mainpage/script/profile.js"></script>
+</body>
+</html>
