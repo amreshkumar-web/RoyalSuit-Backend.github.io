@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/loginstyle.css" >
+</head>
+<body>
+     <div class="parent">
+       <div class="moveowl">
+        <img src="./index src/owl1.png" class="owl1" id="owl1">
+        <img src="./index src/owl2.png" class="owl1" id="owl2">
+        <div class="eyebol" id="bol1" ></div>
+        <div class="eyebol" id="bol2"></div>
+       </div>
+     <div class="mainlogin">
+      <div class="owl" id="backowl">
+      </div>
+      <div class="content">
+        <div class="mainslider">
+            <div class="move" id="move"></div>
+            <div class="sign" id="sign">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="register" id="register">
+                <h2>Register</h2>
+            </div>
+        </div>
+        <div class="change">
+           <form method="post" id="loginForm" action="/routes/login">
+            <div class="logincontent" id="logincontent">
+                <div class="login">
+                    <div class="inputBx">
+                        <span>Username</span>
+                        <input id="loginusername" value="" type="text" name="email">
+                    </div>
+                    <div class="inputBx">
+                        <span>Password</span>
+                        <input  id="loginpassword" value="" type="password" name="password">
+                    </div>
+                    <div class ="remember">
+                        <label><input type="checkbox" name=""></label>
+                        <p> Remember me</p>
+                    </div>
+                    <!-- <p class="forgetPassword">Forget Password</p> -->
+                    <div class="inputBx">
+                        <input id="inpbtn1"  class="inpbtn" type="submit" value=" Sign in"  name="">
+                    </div>
+                </div>
+            </div>
+           </form>
+            <form method="post" action="/routes/register" id="registrationForm">
+                <div class="registercontent" id="registercontent">
+                    <div class="register2">
+                        <div class="inputBx">
+                            <span>Name</span>
+                            <input type="text" id="userId" value="" name="name"  required>
+                        </div>
+                        <div class="inputBx">
+                            <span>Email Id</span>
+                            <input type="email" id="email" value="" name="email"  required>
+                        </div>
+                        <div class="inputBx">
+                            <span>Enter Password</span>
+                            <input type="password" id="cpassword" value="" name="password"  required>
+                        </div>
+                        <div class="inputBx">
+                            <span>Confirm Password</span>
+                            <input type="text" id="confirmpassword" name="confirmpassword"  required>
+                        </div>
+                        <div class="remember">
+                            <input type="checkbox"/>
+                            <p>I agree to the terms and conditions</p>
+                        </div>
+                        <div class="inputBx">
+                            <input id="inpbtn" disabled class="inpbtn"  type="submit" value="Register"  name="">
+                        </div>
+        
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="directlogin">
+            <div class="facebook"><img src="./index src/facebook.png" stle="width: 40px;" src="facebook.png"></div>
+           <div class="google"> <img src="./index src/google.png"></div>
+            <div class="instagram"><img src="./index src/instagram.png" alt=""></div>
+        </div>
+      </div>
+
+     </div>
+
+     </div>
+
+
+    <script src="./script/loginscript.js"></script>
+</body>
+</html>
